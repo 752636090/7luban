@@ -30,7 +30,7 @@ namespace Luban.Job.Cfg.DataConverts
 
         public override string Accept(DEnum type)
         {
-            return $"'{type.StrValue}'";
+            return $"{type.Value}";
         }
 
         public override string Accept(DBean type)

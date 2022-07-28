@@ -26,7 +26,7 @@ namespace Luban.Job.Cfg.DataConverts
 
         public override void Accept(DEnum type, Utf8JsonWriter x)
         {
-            x.WriteStringValue(type.StrValue);
+            x.WriteNumberValue(type.Value);
         }
 
         public override void Accept(DBean type, Utf8JsonWriter x)
